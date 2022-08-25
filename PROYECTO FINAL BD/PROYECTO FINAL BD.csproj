@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{171501C3-878A-411C-A7AE-9685C59EAEDB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROYECTO_FINAL_BD</RootNamespace>
+    <AssemblyName>PROYECTO FINAL BD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsCalculosFacturaccion.cs" />
+    <Compile Include="ClsConexionBD.cs" />
+    <Compile Include="ClsSuperclase.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuques.Designer.cs">
+      <DependentUpon>FrmBuques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCamarotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCamarotes.Designer.cs">
+      <DependentUpon>FrmCamarotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLugares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLugares.Designer.cs">
+      <DependentUpon>FrmLugares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPuertos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPuertos.Designer.cs">
+      <DependentUpon>FrmPuertos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViajesDisponibles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViajesDisponibles.Designer.cs">
+      <DependentUpon>FrmViajesDisponibles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturaccion.designer.cs">
+      <DependentUpon>frmFacturaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuques.resx">
+      <DependentUpon>FrmBuques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCamarotes.resx">
+      <DependentUpon>FrmCamarotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLugares.resx">
+      <DependentUpon>FrmLugares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPuertos.resx">
+      <DependentUpon>FrmPuertos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViajesDisponibles.resx">
+      <DependentUpon>FrmViajesDisponibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturaccion.resx">
+      <DependentUpon>frmFacturaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-cruise-ship-cruise-line-travel-neighbourhood-organization-kuai-text-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crucero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-logo-msc-cruises-cruise-ship-mediterranean-shippin-cruise-5b55950cba1e28.2943787715323353727624.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palmera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\velero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brujula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enviar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
